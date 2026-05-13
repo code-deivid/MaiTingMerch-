@@ -8,6 +8,7 @@ function Nav() {
       <div className="nav-links">
         <a href="#solucion" className="nav-link" data-cursor="hover">Servicios</a>
         <a href="#artistas" className="nav-link" data-cursor="hover">Artistas</a>
+        <a href="#festivales" className="nav-link" data-cursor="hover">Festivales</a>
         <a href="#proceso" className="nav-link" data-cursor="hover">Proceso</a>
       </div>
       <a href="#contacto" className="nav-cta" data-cursor="hover">

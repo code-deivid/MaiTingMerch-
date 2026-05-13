@@ -1,4 +1,4 @@
-// hero.jsx — cinematic full-bleed hero (clean meta)
+// hero.jsx — cinematic full-bleed hero with streetwear photo collage
 function Hero() {
   const [scrollY, setScrollY] = React.useState(0);
   React.useEffect(() => {
@@ -10,7 +10,13 @@ function Hero() {
   return (
     <section className="hero" id="top" data-screen-label="01 Hero">
       <div className="hero-bg" style={{ transform: `translateY(${scrollY * 0.25}px) scale(${1 + scrollY * 0.0003})` }}>
-        <div className="placeholder" data-label="HERO REEL — backstage / crowd / merch booth (16:9 video loop)"></div>
+        <img src="assets/hero-wall.svg" alt="Backstage, crowd and merch booth collage" />
+      </div>
+
+      <div className="hero-photo-stack" aria-hidden="true">
+        <img className="hero-polaroid p1" src="assets/hero/merch-booth.svg" alt="" />
+        <img className="hero-polaroid p2" src="assets/hero/backstage.svg" alt="" />
+        <img className="hero-polaroid p3" src="assets/hero/drop-detail.svg" alt="" />
       </div>
 
       <div className="hero-inner" style={{ transform: `translateY(${scrollY * -0.08}px)` }}>
@@ -25,15 +31,8 @@ function Hero() {
             Merchandising con actitud de calle: diseño, producción, logística y venta para artistas, festivales y marcas que quieren lanzar drops con presencia, ruido y sold-out.
           </p>
           <div className="hero-cta-wrap">
-            <a href="#contacto" className="btn-primary" data-cursor="hover">
-              LANZAR DROP
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" strokeWidth="1.6"/>
-              </svg>
-            </a>
-            <a href="#solucion" className="btn-ghost" data-cursor="hover">
-              VER LO QUE HACEMOS
-            </a>
+            <a href="#contacto" className="btn-primary" data-cursor="hover">LANZAR DROP <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" strokeWidth="1.6"/></svg></a>
+            <a href="#solucion" className="btn-ghost" data-cursor="hover">VER LO QUE HACEMOS</a>
           </div>
         </div>
       </div>

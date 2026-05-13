@@ -83,11 +83,11 @@ function App() {
       <Ticker items={[
         'STREET MERCH', 'DROPS LIMITADOS', 'GOLD EDITION', 'TOUR SUPPLY',
         'STANDS DE FESTIVAL', 'PACKAGING', 'LOGÍSTICA', 'POP-UPS',
-        'SOLD OUT ENERGY', 'TALLER +3.000 M²',
+        'SOLD OUT ENERGY', 'GRAFFITI GOLD',
       ]} />
       <Solution />
       <Artists />
-      <Production />
+      <Festivals />
       <Process />
       <Contact />
 

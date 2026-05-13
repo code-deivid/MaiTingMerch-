@@ -1,4 +1,4 @@
-// artists.jsx — artist wall with real image references + calmer street hover
+// artists.jsx — cleaner artist grid with real-image references and no labels
 const ARTISTS = [
   { name: 'Morat', img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Morat%20en%20concierto.jpg' },
   { name: 'Nathy Peluso', img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nathy%20Peluso%20Live%202024%2005.jpg' },
@@ -13,32 +13,29 @@ const ARTISTS = [
 
 function Artists() {
   return (
-    <section className="artists artists-v3" id="artistas" data-screen-label="03 Artistas">
+    <section className="artists artists-v4" id="artistas" data-screen-label="03 Artistas">
       <div className="artists-inner">
         <div className="artists-head v3-head">
           <div>
             <div className="section-tag reveal">ARTIST WALL</div>
             <h2 className="section-title reveal">Artistas que<br/>han confiado.</h2>
           </div>
-          <p className="section-sub reveal d1">
-            Un muro editorial de nombres grandes, recortes reales y estética de backstage. Hover suave, con golpe visual tipo cómic pero sin marear.
-          </p>
         </div>
 
-        <div className="artist-wall">
+        <div className="artist-grid-v4">
           {ARTISTS.map((a, i) => (
             <a
               key={a.name}
               href="#"
-              className="artist-poster reveal"
+              className="artist-card-v4 reveal"
               data-cursor="hover"
               onClick={(e) => e.preventDefault()}
-              style={{ transitionDelay: `${i * 38}ms` }}
+              style={{ transitionDelay: `${i * 34}ms` }}
             >
               <span className="tape tape-a"></span>
               <span className="tape tape-b"></span>
               <img src={a.img} alt={`${a.name} en directo`} loading="lazy" />
-              <span className="poster-shade"></span>
+              <span className="artist-card-noise"></span>
               <h3>{a.name}</h3>
             </a>
           ))}

@@ -91,45 +91,34 @@ function App() {
       <Process />
       <Contact />
 
-      <footer className="footer">
-        <div className="footer-cols">
+      <footer className="footer footer-v4">
+        <div className="footer-v4-top">
+          <span className="tape tape-a"></span>
+          <h2>MAITINCMERCH!</h2>
+          <p>Diseño, producción y venta de merch para artistas, giras y festivales.</p>
+        </div>
+        <div className="footer-cols footer-v4-cols">
           <div className="footer-col">
             <div className="footer-col-label">Contacto</div>
             <a href="mailto:hola@maitincmerch.com" data-cursor="hover">hola@maitincmerch.com</a>
             <a href="tel:+34000000000" data-cursor="hover">+34 000 000 000</a>
           </div>
           <div className="footer-col">
-            <div className="footer-col-label">Síguenos</div>
-            <div className="footer-socials">
-              <a href="https://instagram.com" data-cursor="hover" aria-label="Instagram" className="footer-social">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="5"/>
-                  <circle cx="12" cy="12" r="4"/>
-                  <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
-                </svg>
-                <span>@maitincmerch</span>
-              </a>
-              <a href="https://facebook.com" data-cursor="hover" aria-label="Facebook" className="footer-social">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                </svg>
-                <span>/maitincmerch</span>
-              </a>
-            </div>
+            <div className="footer-col-label">Ruta rápida</div>
+            <a href="#solucion" data-cursor="hover">Servicios</a>
+            <a href="#artistas" data-cursor="hover">Artistas</a>
+            <a href="#festivales" data-cursor="hover">Festivales</a>
+            <a href="#contacto" data-cursor="hover">Brief</a>
           </div>
           <div className="footer-col">
-            <div className="footer-col-label">Empresa</div>
-            <a href="#solucion" data-cursor="hover">Servicios</a>
-            <a href="#contacto" data-cursor="hover">Contacto</a>
+            <div className="footer-col-label">Social</div>
+            <a href="https://instagram.com" data-cursor="hover">Instagram / @maitincmerch</a>
+            <a href="https://facebook.com" data-cursor="hover">Facebook / maitincmerch</a>
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2026 MAITINCMERCH! · TODOS LOS DERECHOS RESERVADOS</span>
-          <div>
-            <a href="#" data-cursor="hover">Privacidad</a>
-            <a href="#" data-cursor="hover">Cookies</a>
-            <a href="#" data-cursor="hover">Aviso legal</a>
-          </div>
+          <span>© 2026 MAITINCMERCH! · TOUR SUPPLY · STREET DROP · SOLD OUT</span>
+          <div><a href="#" data-cursor="hover">Privacidad</a><a href="#" data-cursor="hover">Cookies</a><a href="#" data-cursor="hover">Aviso legal</a></div>
         </div>
       </footer>
 

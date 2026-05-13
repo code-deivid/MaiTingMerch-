@@ -15,26 +15,24 @@ function Hero() {
 
       <div className="hero-inner" style={{ transform: `translateY(${scrollY * -0.08}px)` }}>
         <h1 className="hero-title">
-          <span className="word"><span>LISTOS</span></span>{' '}
-          <span className="word"><span>PARA LA</span></span><br/>
-          <em>gira.</em>
+          <span className="word"><span>MERCH</span></span>{' '}
+          <span className="word"><span>PARA</span></span><br/>
+          <em>romper.</em>
         </h1>
 
         <div className="hero-bottom">
           <p className="hero-sub">
-            Del diseño a la venta, nos encargamos de todo. Diseñamos, producimos,
-            gestionamos la logística y vendemos — online y a pie de escenario —
-            para artistas, festivales y marcas.
+            Merchandising con actitud de calle: diseño, producción, logística y venta para artistas, festivales y marcas que quieren lanzar drops con presencia, ruido y sold-out.
           </p>
           <div className="hero-cta-wrap">
             <a href="#contacto" className="btn-primary" data-cursor="hover">
-              EMPEZAR PROYECTO
+              LANZAR DROP
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" strokeWidth="1.6"/>
               </svg>
             </a>
             <a href="#solucion" className="btn-ghost" data-cursor="hover">
-              VER SERVICIOS
+              VER LO QUE HACEMOS
             </a>
           </div>
         </div>

@@ -1,7 +1,7 @@
 // app.jsx — main composition
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "accent": "#C9A36A",
+  "accent": "#d6a738",
   "displayFont": "Archivo Black",
   "showGrain": true,
   "cursorEnabled": true,
@@ -81,9 +81,9 @@ function App() {
       <Nav />
       <Hero />
       <Ticker items={[
-        'MERCH 360°', 'DISEÑO', 'PRODUCCIÓN PROPIA', 'STANDS DE FESTIVAL',
-        'TIENDAS ONLINE', 'PACKAGING', 'LOGÍSTICA', 'POP-UPS',
-        'DROPS LIMITADOS', 'TALLER +3.000 M²',
+        'STREET MERCH', 'DROPS LIMITADOS', 'GOLD EDITION', 'TOUR SUPPLY',
+        'STANDS DE FESTIVAL', 'PACKAGING', 'LOGÍSTICA', 'POP-UPS',
+        'SOLD OUT ENERGY', 'TALLER +3.000 M²',
       ]} />
       <Solution />
       <Artists />
@@ -138,7 +138,7 @@ function App() {
         <window.TweakColor
           label="Acento metálico"
           value={t.accent}
-          options={['#C9A36A', '#D4B57A', '#B8864A', '#E8C580', '#A87C3D']}
+          options={['#d6a738', '#ffdf7a', '#b8862d', '#e8c580', '#7a5514']}
           onChange={(v) => setTweak('accent', v)}
         />
         <window.TweakSelect

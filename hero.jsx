@@ -1,4 +1,4 @@
-// hero.jsx — cinematic full-bleed hero with streetwear photo collage
+// hero.jsx — brighter streetwear hero with real editorial photos
 function Hero() {
   const [scrollY, setScrollY] = React.useState(0);
   React.useEffect(() => {
@@ -8,36 +8,37 @@ function Hero() {
   }, []);
 
   return (
-    <section className="hero" id="top" data-screen-label="01 Hero">
-      <div className="hero-bg" style={{ transform: `translateY(${scrollY * 0.25}px) scale(${1 + scrollY * 0.0003})` }}>
-        <img src="assets/hero-wall.svg" alt="Backstage, crowd and merch booth collage" />
+    <section className="hero hero-v3" id="top" data-screen-label="01 Hero">
+      <div className="hero-bg" style={{ transform: `translateY(${scrollY * 0.18}px) scale(${1 + scrollY * 0.00025})` }}>
+        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1800&q=80" alt="Concierto urbano" />
       </div>
 
       <div className="hero-photo-stack" aria-hidden="true">
-        <img className="hero-polaroid p1" src="assets/hero/merch-booth.svg" alt="" />
-        <img className="hero-polaroid p2" src="assets/hero/backstage.svg" alt="" />
-        <img className="hero-polaroid p3" src="assets/hero/drop-detail.svg" alt="" />
+        <img className="hero-polaroid p1" src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80" alt="" />
+        <img className="hero-polaroid p2" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="" />
+        <img className="hero-polaroid p3" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80" alt="" />
       </div>
 
       <div className="hero-inner" style={{ transform: `translateY(${scrollY * -0.08}px)` }}>
+        <div className="hero-kicker">MAITINC MERCH · GOLD STREET SUPPLY</div>
         <h1 className="hero-title">
           <span className="word"><span>MERCH</span></span>{' '}
           <span className="word"><span>PARA</span></span><br/>
-          <em>romper.</em>
+          <em>artistas.</em>
         </h1>
 
         <div className="hero-bottom">
           <p className="hero-sub">
-            Merchandising con actitud de calle: diseño, producción, logística y venta para artistas, festivales y marcas que quieren lanzar drops con presencia, ruido y sold-out.
+            Diseño, producción, logística y venta para artistas, festivales y marcas que quieren lanzar drops con presencia de calle, acabado premium y energía de sold-out.
           </p>
           <div className="hero-cta-wrap">
-            <a href="#contacto" className="btn-primary" data-cursor="hover">LANZAR DROP <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" strokeWidth="1.6"/></svg></a>
-            <a href="#solucion" className="btn-ghost" data-cursor="hover">VER LO QUE HACEMOS</a>
+            <a href="#contacto" className="btn-primary" data-cursor="hover">LANZAR DROP</a>
+            <a href="#solucion" className="btn-ghost" data-cursor="hover">VER SERVICIO 360º</a>
           </div>
         </div>
       </div>
 
-      <div className="scroll-cue">DESPLAZAR / SCROLL</div>
+      <div className="scroll-cue">SCROLL / BAJA AL MURO</div>
     </section>
   );
 }

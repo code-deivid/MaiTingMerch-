@@ -1,4 +1,4 @@
-// contact.jsx — form-only, centered, premium
+// contact.jsx — streetwear brief form
 function Field({ label, name, type = 'text', value, onChange, textarea, options, required, placeholder }) {
   return (
     <div className="ff">
@@ -11,7 +11,7 @@ function Field({ label, name, type = 'text', value, onChange, textarea, options,
           {options.map((o) => <option key={o} value={o}>{o}</option>)}
         </select>
       ) : textarea ? (
-        <textarea id={name} name={name} value={value} onChange={onChange} rows={4} className="ff-input ff-textarea"
+        <textarea id={name} name={name} value={value} onChange={onChange} rows={5} className="ff-input ff-textarea"
                   placeholder={placeholder} data-cursor="hover" />
       ) : (
         <input id={name} name={name} type={type} value={value} onChange={onChange} className="ff-input"
@@ -34,22 +34,18 @@ function Contact() {
   };
 
   return (
-    <section className="contact contact-centered" id="contacto" data-screen-label="06 Contacto">
-      <div className="contact-intro">
-        <h2 className="contact-headline reveal">
-          Hablemos de tu<br/>próximo <em>proyecto.</em>
-        </h2>
-        <p className="section-sub reveal d1" style={{ margin: '0 auto', maxWidth: 560 }}>
-          Cuéntanos qué tienes en mente. Te respondemos en menos de 48h
-          con propuesta inicial y siguiente paso.
-        </p>
+    <section className="contact contact-v3" id="contacto" data-screen-label="06 Contacto">
+      <div className="contact-poster reveal">
+        <span className="tape tape-a"></span>
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1300&q=80" alt="Concierto y público" />
+        <strong>BRIEF / DROP</strong>
       </div>
 
-      <form className="form-box reveal d1" onSubmit={submit}>
+      <form className="form-box form-v3 reveal d1" onSubmit={submit}>
         <div className="form-box-head">
-          <div className="form-box-tag">Formulario de contacto</div>
-          <h3 className="form-box-title">Cuéntanos tu proyecto</h3>
-          <p className="form-box-sub">Rellena los campos y te escribimos en menos de 48h.</p>
+          <div className="form-box-tag">Nuevo proyecto</div>
+          <h2 className="form-box-title">Cuéntanos tu drop</h2>
+          <p className="form-box-sub">Brief rápido, estética de calle y respuesta en menos de 48h.</p>
         </div>
 
         <div className="form-grid">
@@ -58,28 +54,23 @@ function Contact() {
           <Field label="Teléfono" name="phone" type="tel" value={form.phone} onChange={upd('phone')} placeholder="+34 ..." />
           <Field label="Artista / Marca" name="project" value={form.project} onChange={upd('project')} placeholder="Nombre del proyecto" />
           <div className="ff-full">
-            <Field label="¿Qué necesitas?" name="need" value={form.need} onChange={upd('need')}
-                   options={['Diseño + Producción', 'Tienda online', 'Stand de festival', 'Tour merch completo', 'Pop-up / Activación', 'Otro']} />
+            <Field label="Qué necesitas" name="need" value={form.need} onChange={upd('need')}
+                   options={['Diseño + producción', 'Merch para gira', 'Stand de festival', 'Tienda online', 'Pop-up / activación', 'Todo el 360º']} />
           </div>
           <div className="ff-full">
-            <Field label="Cuéntanos más" name="message" value={form.message} onChange={upd('message')} textarea required
-                   placeholder="Briefing, calendario, referencias..." />
+            <Field label="Brief" name="message" value={form.message} onChange={upd('message')} textarea required
+                   placeholder="Fechas, referencias, tipo de prendas, volumen, ideas, estilo..." />
           </div>
         </div>
 
         <div className="form-cta">
           <div className={`form-status ${status === 'ok' ? 'ok' : status === 'error' ? 'err' : ''}`}>
             {status === 'sending' && 'ENVIANDO...'}
-            {status === 'ok' && '✓ MENSAJE ENVIADO — TE ESCRIBIMOS EN 48H'}
-            {status === 'error' && '⚠ COMPLETA LOS CAMPOS OBLIGATORIOS'}
+            {status === 'ok' && '✓ BRIEF RECIBIDO — TE ESCRIBIMOS EN 48H'}
+            {status === 'error' && '⚠ FALTAN CAMPOS OBLIGATORIOS'}
             {!status && 'Respuesta en menos de 48h'}
           </div>
-          <button type="submit" className="btn-primary" data-cursor="hover">
-            ENVIAR MENSAJE
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" strokeWidth="1.6"/>
-            </svg>
-          </button>
+          <button type="submit" className="btn-primary" data-cursor="hover">ENVIAR BRIEF</button>
         </div>
       </form>
     </section>

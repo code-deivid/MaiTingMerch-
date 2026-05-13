@@ -80,11 +80,6 @@ function App() {
 
       <Nav />
       <Hero />
-      <Ticker items={[
-        'STREET MERCH', 'DROPS LIMITADOS', 'GOLD EDITION', 'TOUR SUPPLY',
-        'STANDS DE FESTIVAL', 'PACKAGING', 'LOGÍSTICA', 'POP-UPS',
-        'SOLD OUT ENERGY', 'GRAFFITI GOLD',
-      ]} />
       <Solution />
       <Artists />
       <Festivals />

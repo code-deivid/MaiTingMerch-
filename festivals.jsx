@@ -8,7 +8,6 @@ const FESTIVALS = [
 function Festivals() {
   return (
     <section className="festivals festivals-v4" id="festivales" data-screen-label="04 Festivales">
-      <div className="festival-marquee" aria-hidden="true">FESTIVAL SUPPLY · STANDS · TOUR MERCH · SOLD OUT · </div>
       <div className="festivals-head v3-head">
         <div>
           <div className="section-tag reveal">FESTIVAL SUPPLY</div>

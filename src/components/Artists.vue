@@ -42,29 +42,32 @@ const getTapeStyle = (index) => {
           <h2 class="section-title section-title--two-lines reveal"><span>Artistas que</span><span>han confiado</span></h2>
         </div>
       </div>
-      <div class="artist-wall">
-        <a
-          v-for="(artist, index) in artists"
+      <div class="artist-wall-scroll">
+        <div class="artist-wall">
+          <a
+            v-for="(artist, index) in artists"
           :key="artist.name"
           href="#"
           class="artist-poster reveal"
           data-cursor="hover"
           :style="{ transitionDelay: `${index * 38}ms`, ...getTapeStyle(index) }"
-          @click.prevent
-        >
-          <span class="tape tape-a"></span>
-          <span class="tape tape-b"></span>
+            @click.prevent
+          >
+            <span class="tape tape-a"></span>
+            <span class="tape tape-b"></span>
 
-          <figure class="artist-polaroid">
-            <div class="artist-photo">
-              <img :src="artist.img" :alt="`${artist.name} en directo`" loading="lazy" />
-              <span class="poster-shade"></span>
-            </div>
-            <figcaption>
-              <h3>{{ artist.name }}</h3>
-            </figcaption>
-          </figure>
-        </a>
+
+            <figure class="artist-polaroid">
+              <div class="artist-photo">
+                <img :src="artist.img" :alt="`${artist.name} en directo`" loading="lazy" />
+                <span class="poster-shade"></span>
+              </div>
+              <figcaption>
+                <h3>{{ artist.name }}</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
       </div>
     </div>
   </section>

@@ -84,10 +84,12 @@ html {
   z-index: 10001;
   transform: translate(-50%, -50%);
 }
-@media (hover: none) {
+@media (pointer: coarse) {
   .cursor,
   .cursor-dot {
-    display: none;
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
   body {
     cursor: auto;
@@ -4073,10 +4075,6 @@ body {
     touch-action: none;
   }
 
-  .cursor,
-  .cursor-dot {
-    display: none !important;
-  }
 
   .noise,
   .vignette {
@@ -5529,5 +5527,502 @@ body {
   .footer-bottom {
     overflow: visible !important;
     padding-inline: 22px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL TOUCH DEVICE + MOBILE/TABLET FIXES
+   ========================================================= */
+@media (pointer: coarse) {
+  .cursor,
+  .cursor-dot {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  body {
+    cursor: auto !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .artist-wall {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    overscroll-behavior-x: contain !important;
+  }
+
+  .artist-poster:last-child {
+    margin-right: 0 !important;
+  }
+
+  .artist-poster,
+  .artist-polaroid {
+    overflow: visible !important;
+  }
+
+  .artist-poster::before,
+  .artist-poster .tape,
+  .artist-poster .tape-a,
+  .artist-poster .tape-b {
+    z-index: 60 !important;
+  }
+
+  .artist-wall::before {
+    z-index: 10 !important;
+  }
+
+  .artist-photo,
+  .artist-photo img,
+  .artist-poster figcaption {
+    position: relative !important;
+    z-index: 1 !important;
+  }
+
+  .mobile-nav-link,
+  .mobile-nav-cta {
+    font-family: 'Archivo Black', sans-serif !important;
+  }
+}
+
+/* =========================================================
+   LARGE DESKTOP / 4K RESPONSIVE PASS
+   Applies only to very wide screens. Mobile/tablet rules stay untouched.
+   ========================================================= */
+@media (min-width: 1920px) {
+  :root {
+    --wide-max: 1880px;
+    --wide-pad: clamp(48px, 4vw, 96px);
+  }
+
+  .nav {
+    max-width: 1680px;
+    padding-inline: 28px 22px;
+  }
+
+  .nav-logo-img {
+    height: 52px;
+  }
+
+  .nav-links {
+    gap: 44px;
+  }
+
+  .nav-link,
+  .nav-cta {
+    font-size: 15px;
+  }
+
+  .section,
+  .artists-inner,
+  .v3-head,
+  .service-editorial,
+  .artist-wall,
+  .festival-wall,
+  .process-v3-flow,
+  .contact,
+  .footer-cols {
+    max-width: var(--wide-max);
+  }
+
+  .section,
+  .solution-v3,
+  .artists-v3,
+  .festivals-v3,
+  .process-v3,
+  .contact-v3,
+  .contact {
+    padding-left: var(--wide-pad);
+    padding-right: var(--wide-pad);
+  }
+
+  .section,
+  .solution-v3,
+  .artists-v3,
+  .festivals-v3,
+  .process-v3,
+  .contact-v3,
+  .contact {
+    padding-top: clamp(170px, 8vw, 230px);
+    padding-bottom: clamp(170px, 8vw, 230px);
+  }
+
+  .hero {
+    min-height: 108vh;
+    padding-left: var(--wide-pad);
+    padding-right: var(--wide-pad);
+    padding-bottom: clamp(90px, 5vw, 140px);
+  }
+
+  .hero-inner {
+    max-width: 1080px;
+  }
+
+  .hero-title {
+    font-size: clamp(172px, 9.6vw, 260px);
+  }
+
+  .hero-sub {
+    max-width: 620px;
+    font-size: 22px;
+  }
+
+  .hero-bottom {
+    gap: 110px;
+  }
+
+  .hero-bg {
+    inset: 150px var(--wide-pad) 110px 50%;
+  }
+
+  .hero-photo-stack {
+    right: clamp(80px, 7vw, 160px);
+    width: clamp(620px, 34vw, 820px);
+  }
+
+  .hero-polaroid {
+    width: clamp(260px, 15vw, 390px);
+  }
+
+  .ticker-track {
+    font-size: clamp(58px, 3.8vw, 86px);
+  }
+
+  .section-title {
+    font-size: clamp(108px, 5.6vw, 160px);
+  }
+
+  .section-sub {
+    max-width: 760px;
+    font-size: 21px;
+  }
+
+  .v3-head {
+    grid-template-columns: 1fr 0.68fr;
+    gap: 84px;
+    margin-bottom: 86px;
+  }
+
+  .service-editorial {
+    gap: 52px;
+    grid-template-columns: 1fr 1.08fr;
+  }
+
+  .service-big-photo {
+    min-height: 760px;
+  }
+
+  .service-stack {
+    gap: 28px;
+  }
+
+  .service-scrap {
+    padding: 44px 44px 48px;
+  }
+
+  .service-scrap h3 {
+    font-size: clamp(70px, 3.8vw, 106px);
+  }
+
+  .service-scrap p {
+    font-size: 19px;
+  }
+
+  .artist-wall {
+    gap: 36px;
+  }
+
+  .artist-poster {
+    min-height: 560px;
+  }
+
+  .artist-poster h3 {
+    font-size: clamp(74px, 4vw, 120px);
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+  }
+
+  .festival-wall {
+    gap: 34px;
+  }
+
+  .festival-poster {
+    height: 720px;
+  }
+
+  .festival-label h3 {
+    font-size: clamp(76px, 3.8vw, 118px);
+  }
+
+  .process-v3-flow {
+    gap: 36px;
+  }
+
+  .process-v3-tile {
+    min-height: 430px;
+    padding: 48px 44px;
+  }
+
+  .process-title {
+    font-size: clamp(58px, 3.1vw, 92px);
+  }
+
+  .process-desc {
+    font-size: 19px;
+  }
+
+  .process-graffiti-arrow {
+    font-size: 112px;
+  }
+
+  .contact-v3 {
+    grid-template-columns: 0.82fr 1fr;
+    gap: 60px;
+  }
+
+  .contact-poster {
+    min-height: 820px;
+  }
+
+  .form-v3 {
+    max-width: 1080px !important;
+    padding: 54px !important;
+  }
+
+  .form-v3 .form-box-title {
+    font-size: clamp(78px, 3.8vw, 116px);
+  }
+
+  .ff-label,
+  .form-status {
+    font-size: 14px;
+  }
+
+  .ff-input {
+    font-size: 18px;
+    padding: 18px 6px 19px;
+  }
+
+  .footer {
+    padding-left: var(--wide-pad) !important;
+    padding-right: var(--wide-pad) !important;
+  }
+
+  .footer-cols {
+    gap: 34px !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --wide-max: 2260px;
+    --wide-pad: clamp(96px, 5vw, 160px);
+  }
+
+  .nav {
+    max-width: 2040px;
+  }
+
+  .hero-inner {
+    max-width: 1280px;
+  }
+
+  .hero-title {
+    font-size: clamp(230px, 8.6vw, 330px);
+  }
+
+  .hero-sub {
+    font-size: 25px;
+    max-width: 760px;
+  }
+
+  .hero-bg {
+    inset: 170px var(--wide-pad) 130px 49%;
+  }
+
+  .section-title {
+    font-size: clamp(148px, 5vw, 210px);
+  }
+
+  .section-sub,
+  .v3-head .section-sub {
+    font-size: 24px;
+    max-width: 880px;
+  }
+
+  .service-big-photo {
+    min-height: 900px;
+  }
+
+  .artist-poster {
+    min-height: 690px;
+  }
+
+  .festival-poster {
+    height: 860px;
+  }
+
+  .process-v3-tile {
+    min-height: 520px;
+  }
+
+  .contact-poster {
+    min-height: 960px;
+  }
+
+  .form-v3 {
+    max-width: 1240px !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE ARTISTS CLOTHESLINE FIX
+   Real rope behind the pegs, not a decorative short line.
+   ========================================================= */
+@media (max-width: 1024px) {
+  .artists-v3,
+  .artists-v3 .artists-inner {
+    overflow: visible !important;
+  }
+
+  .artist-wall-scroll {
+    width: calc(100% + 32px) !important;
+    margin-left: -16px !important;
+    margin-right: -16px !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    overscroll-behavior-x: contain !important;
+  }
+
+  .artist-wall-scroll::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .artist-wall {
+    position: relative !important;
+    z-index: 1 !important;
+    display: flex !important;
+    grid-template-columns: none !important;
+    width: max-content !important;
+    min-width: max-content !important;
+    max-width: none !important;
+    gap: 24px !important;
+    padding: 56px 32px 38px !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    isolation: isolate !important;
+    scroll-snap-type: x mandatory !important;
+  }
+
+  .artist-wall::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 32px !important;
+    right: 32px !important;
+    top: 31px !important;
+    height: 5px !important;
+    background:
+      repeating-linear-gradient(
+        90deg,
+        #6f4519 0 10px,
+        #9b692b 10px 18px,
+        #5a3715 18px 26px
+      ) !important;
+    border: 1px solid rgba(0, 0, 0, 0.42) !important;
+    box-shadow:
+      0 2px 0 rgba(0, 0, 0, 0.72),
+      0 -1px 0 rgba(255, 220, 130, 0.25) inset !important;
+    z-index: 12 !important;
+    pointer-events: none !important;
+  }
+
+  .artist-poster,
+  .artist-poster.reveal,
+  .artist-poster.reveal.in,
+  .artist-poster.reveal.in:hover,
+  .artist-poster:hover {
+    position: relative !important;
+    flex: 0 0 min(76vw, 315px) !important;
+    width: min(76vw, 315px) !important;
+    min-width: min(76vw, 315px) !important;
+    max-width: min(76vw, 315px) !important;
+    min-height: 382px !important;
+    aspect-ratio: 4 / 5.35 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    scroll-snap-align: center !important;
+    z-index: 20 !important;
+  }
+
+  .artist-poster::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: -35px !important;
+    width: 24px !important;
+    height: 58px !important;
+    transform: translateX(-50%) rotate(var(--peg-rotate, -5deg)) !important;
+    background:
+      linear-gradient(90deg, rgba(255, 255, 255, 0.26), transparent 38%),
+      linear-gradient(180deg, #d7a85f 0%, #b87930 100%) !important;
+    border: 2px solid #4b2b0e !important;
+    box-shadow:
+      3px 4px 0 rgba(0, 0, 0, 0.76),
+      inset -4px 0 0 rgba(80, 43, 10, 0.22) !important;
+    z-index: 40 !important;
+    pointer-events: none !important;
+  }
+
+  .artist-poster::after {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: -12px !important;
+    width: 36px !important;
+    height: 8px !important;
+    transform: translateX(-50%) rotate(var(--peg-rotate, -5deg)) !important;
+    background: rgba(42, 23, 7, 0.3) !important;
+    z-index: 35 !important;
+    pointer-events: none !important;
+  }
+
+  .artist-poster:nth-child(3n + 1)::before,
+  .artist-poster:nth-child(3n + 1)::after { --peg-rotate: -7deg; }
+
+  .artist-poster:nth-child(3n + 2)::before,
+  .artist-poster:nth-child(3n + 2)::after { --peg-rotate: 6deg; }
+
+  .artist-poster:nth-child(3n)::before,
+  .artist-poster:nth-child(3n)::after { --peg-rotate: -2deg; }
+
+  .artist-polaroid,
+  .artist-photo {
+    position: relative !important;
+  }
+
+  .artist-polaroid {
+    overflow: visible !important;
+    z-index: 21 !important;
+  }
+
+  .artist-photo {
+    overflow: hidden !important;
+    z-index: 1 !important;
+  }
+
+  .artist-poster .tape,
+  .artist-poster .tape-a,
+  .artist-poster .tape-b {
+    display: none !important;
   }
 }

@@ -57,7 +57,7 @@ html {
   width: 14px;
   height: 14px;
   border: 1px solid var(--gold);
-  border-radius: 0 !important;
+  border-radius: 50%;
   pointer-events: none;
   z-index: 10000;
   transform: translate(-50%, -50%);
@@ -79,7 +79,7 @@ html {
   width: 4px;
   height: 4px;
   background: var(--fg);
-  border-radius: 0 !important;
+  border-radius: 50%;
   pointer-events: none;
   z-index: 10001;
   transform: translate(-50%, -50%);
@@ -125,7 +125,7 @@ html {
   text-transform: uppercase;
   width: calc(100% - 28px);
   max-width: 1240px;
-  border-radius: 0 !important;
+  border-radius: 999px;
   background: rgba(18, 18, 18, 0.42);
   -webkit-backdrop-filter: blur(22px) saturate(180%);
   backdrop-filter: blur(22px) saturate(180%);
@@ -139,7 +139,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 0 !important;
+  border-radius: inherit;
   pointer-events: none;
   background: linear-gradient(
     180deg,
@@ -194,7 +194,7 @@ html {
   text-decoration: none;
   padding: 8px 14px;
   border: 1px solid var(--line-strong);
-  border-radius: 0 !important;
+  border-radius: 999px;
   transition: all 0.2s;
 }
 .nav-cta:hover {
@@ -275,7 +275,7 @@ html {
   width: 8px;
   height: 8px;
   background: var(--gold);
-  border-radius: 0 !important;
+  border-radius: 50%;
   box-shadow: 0 0 12px var(--gold-glow);
 }
 
@@ -401,7 +401,7 @@ html {
   color: #0a0a0a;
   padding: 20px 28px 20px 32px;
   border: none;
-  border-radius: 0 !important;
+  border-radius: 999px;
   font-family: var(--mono);
   font-size: 1.4rem;
   font-weight: 600;
@@ -809,7 +809,7 @@ html {
   color: var(--gold);
   padding: 5px 10px;
   border: 1px solid var(--gold);
-  border-radius: 0 !important;
+  border-radius: 999px;
   align-self: flex-start;
 }
 .prod-ref {
@@ -915,7 +915,7 @@ html {
   color: var(--gold);
   padding: 5px 10px;
   border: 1px solid var(--gold);
-  border-radius: 0 !important;
+  border-radius: 999px;
   background: rgba(10, 10, 10, 0.5);
   backdrop-filter: blur(8px);
 }
@@ -931,7 +931,7 @@ html {
 .fest-arrow {
   width: 56px;
   height: 56px;
-  border-radius: 0 !important;
+  border-radius: 50%;
   background: transparent;
   border: 1px solid var(--line-strong);
   color: var(--fg);
@@ -995,7 +995,7 @@ html {
 .process-icon {
   width: 56px;
   height: 56px;
-  border-radius: 0 !important;
+  border-radius: 50%;
   border: 1px solid var(--line-strong);
   display: inline-flex;
   align-items: center;
@@ -1081,7 +1081,7 @@ html {
   position: relative;
   background: linear-gradient(180deg, #141414 0%, #0d0d0d 100%);
   border: 1px solid var(--line-strong);
-  border-radius: 0 !important;
+  border-radius: 18px;
   padding: 40px;
   box-shadow:
     0 0 0 1px rgba(201, 163, 106, 0.1) inset,
@@ -1092,7 +1092,7 @@ html {
   content: "";
   position: absolute;
   inset: -1px;
-  border-radius: 0 !important;
+  border-radius: 18px;
   padding: 1px;
   background: linear-gradient(
     180deg,
@@ -1118,7 +1118,7 @@ html {
   color: var(--gold);
   padding: 5px 10px;
   border: 1px solid var(--gold);
-  border-radius: 0 !important;
+  border-radius: 999px;
   margin-bottom: 16px;
 }
 .form-box-title {
@@ -1163,7 +1163,7 @@ html {
   width: 100%;
   background: rgba(10, 10, 10, 0.6);
   border: 1px solid var(--line);
-  border-radius: 0 !important;
+  border-radius: 10px;
   padding: 14px 16px;
   color: var(--fg);
   font-family: var(--sans);
@@ -1341,7 +1341,7 @@ html {
   color: var(--fg) !important;
   padding: 10px 14px;
   border: 1px solid var(--line);
-  border-radius: 0 !important;
+  border-radius: 999px;
   width: max-content;
   transition:
     border-color 0.25s,
@@ -1594,7 +1594,7 @@ body::after {
 .nav {
   top: 22px;
   max-width: 1280px;
-  border-radius: 0 !important;
+  border-radius: 0;
   padding: 12px 18px 12px 24px;
   background: var(--paper);
   color: var(--ink);
@@ -1621,7 +1621,7 @@ body::after {
   );
 }
 .nav::before {
-  border-radius: 0 !important;
+  border-radius: 0;
   background:
     linear-gradient(
       90deg,
@@ -1655,7 +1655,7 @@ body::after {
 .nav-cta {
   border: 2px solid var(--ink);
   background: var(--gold);
-  border-radius: 0 !important;
+  border-radius: 0;
   box-shadow: 4px 4px 0 var(--ink);
 }
 .nav-cta:hover {
@@ -1861,7 +1861,7 @@ body::after {
   letter-spacing: -0.04em;
 }
 .placeholder {
-  border-radius: 0 !important;
+  border-radius: 0;
   background:
     linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.32)),
     repeating-linear-gradient(
@@ -1872,7 +1872,7 @@ body::after {
     linear-gradient(135deg, #2a2417, #090806) !important;
 }
 .placeholder::before {
-  border-radius: 0 !important;
+  border-radius: 0;
   background: var(--gold-2);
   box-shadow: 0 0 24px var(--gold);
 }
@@ -1975,7 +1975,7 @@ body::after {
 @media (max-width: 900px) {
   .nav {
     clip-path: none;
-    border-radius: 0 !important;
+    border-radius: 0px;
     padding: 10px 12px;
   }
   .nav-links {
@@ -2211,7 +2211,7 @@ body::after {
 }
 .spray-dot {
   position: absolute;
-  border-radius: 0 !important;
+  border-radius: 50%;
   background: var(--gold);
   filter: blur(1px);
   opacity: 0.72;
@@ -2867,7 +2867,7 @@ body {
   width: 260px;
   height: 260px;
   border: 2px solid rgba(255, 220, 115, 0.18);
-  border-radius: 0 !important;
+  border-radius: 50%;
   animation: drift 9s steps(5, end) infinite;
 }
 .spray-bg span:nth-child(1) {
@@ -3302,7 +3302,7 @@ body {
     #fff8e9 !important;
   color: #211504 !important;
   border: 0 !important;
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   clip-path: polygon(1% 0, 99% 1%, 100% 97%, 94% 100%, 4% 98%, 0 4%) !important;
   box-shadow:
     16px 18px 0 #000,
@@ -3316,7 +3316,7 @@ body {
   bottom: 0;
   width: 2px;
   background: rgba(180, 66, 54, 0.24);
-  border-radius: 0 !important;
+  border-radius: 0;
   mask: none;
   -webkit-mask: none;
 }
@@ -3396,7 +3396,7 @@ body {
   min-width: 62px;
   min-height: 62px;
   justify-content: center;
-  border-radius: 0 !important;
+  border-radius: 50%;
   isolation: isolate;
 }
 .nav-logo::before {
@@ -3404,7 +3404,7 @@ body {
   position: absolute;
   inset: 2px;
   z-index: -1;
-  border-radius: 0 !important;
+  border-radius: 50%;
   background: #070604;
   box-shadow: 4px 4px 0 rgba(214, 167, 56, 0.55);
 }
@@ -3688,15 +3688,15 @@ body {
 }
 .service-scrap--1 {
   clip-path: polygon(0 3%, 97% 0, 100% 82%, 94% 100%, 5% 96%) !important;
-  border-radius: 0 !important;
+  border-radius: 2px 16px 4px 10px;
 }
 .service-scrap--2 {
   clip-path: polygon(3% 0, 100% 5%, 96% 100%, 0 93%) !important;
-  border-radius: 0 !important;
+  border-radius: 18px 3px 12px 2px;
 }
 .service-scrap--3 {
   clip-path: polygon(0 0, 94% 3%, 100% 96%, 8% 100%, 2% 72%) !important;
-  border-radius: 0 !important;
+  border-radius: 4px 12px 22px 3px;
 }
 
 /* ARTISTAS */
@@ -3994,7 +3994,7 @@ body {
 
   display: block !important;
   background: #fff4d8 !important;
-  border-radius: 0 !important;
+  border-radius: 0px !important;
   box-shadow: 7px 7px 0 #000 !important;
   transform: rotate(-1deg) !important;
 
@@ -4091,7 +4091,7 @@ body {
     transform: none !important;
     padding: 8px 10px 8px 12px !important;
     gap: 10px !important;
-    border-radius: 0 !important;
+    border-radius: 0px;
     background: rgba(10, 10, 10, 0.82) !important;
     border: 1px solid rgba(239, 234, 226, 0.16) !important;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.42) !important;
@@ -4137,7 +4137,7 @@ body {
     gap: 5px;
     padding: 0;
     border: 1px solid rgba(239, 234, 226, 0.22);
-    border-radius: 0 !important;
+    border-radius: 0px;
     background: rgba(239, 234, 226, 0.08);
     color: var(--fg);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
@@ -4147,7 +4147,7 @@ body {
     display: block;
     width: 20px;
     height: 2px;
-    border-radius: 0 !important;
+    border-radius: 0px;
     background: currentColor;
     transition: transform 220ms ease, opacity 180ms ease;
   }
@@ -4230,7 +4230,7 @@ body {
     width: 42px;
     height: 42px;
     border: 1px solid rgba(239, 234, 226, 0.18);
-    border-radius: 0 !important;
+    border-radius: 0px;
     background: rgba(239, 234, 226, 0.08);
     color: var(--fg);
   }
@@ -4241,7 +4241,7 @@ body {
     left: 50%;
     width: 19px;
     height: 2px;
-    border-radius: 0 !important;
+    border-radius: 0px;
     background: currentColor;
   }
 
@@ -4266,7 +4266,7 @@ body {
     min-height: 58px;
     padding: 15px 16px;
     border: 1px solid rgba(239, 234, 226, 0.12);
-    border-radius: 0 !important;
+    border-radius: 0px;
     background: rgba(239, 234, 226, 0.055);
     color: var(--fg);
     text-decoration: none;
@@ -4303,7 +4303,7 @@ body {
     justify-content: center;
     min-height: 56px;
     padding: 16px 18px;
-    border-radius: 0 !important;
+    border-radius: 0px;
     background: var(--fg);
     color: #0a0a0a;
     text-decoration: none;
@@ -4400,7 +4400,7 @@ body {
     width: 100% !important;
     height: clamp(230px, 66vw, 330px) !important;
     margin: 0 !important;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
     border: 8px solid #efeae2 !important;
     transform: none !important;
     overflow: hidden;
@@ -4505,7 +4505,7 @@ body {
   .service-big-photo,
   .contact-poster {
     min-height: clamp(260px, 78vw, 360px) !important;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
     clip-path: none !important;
     box-shadow: 0 20px 46px rgba(0, 0, 0, 0.38) !important;
     transform: none !important;
@@ -4532,7 +4532,7 @@ body {
   .footer-col {
     clip-path: none !important;
     transform: none !important;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
   }
 
   .service-scrap,
@@ -4563,13 +4563,13 @@ body {
 
   .artist-polaroid {
     padding: 10px 10px 18px !important;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
   }
 
   .artist-photo {
     height: clamp(260px, 86vw, 380px) !important;
     aspect-ratio: auto !important;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
   }
 
   .artist-poster h3 {
@@ -4592,7 +4592,7 @@ body {
   .festival-poster {
     height: clamp(260px, 78vw, 390px) !important;
     clip-path: none !important;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
     transform: none !important;
     box-shadow: 0 18px 42px rgba(0, 0, 0, 0.36) !important;
   }
@@ -4772,7 +4772,7 @@ body {
     .footer-bottom,
     .btn-primary
   ) {
-    border-radius: 0 !important;
+    border-radius: 0px !important;
   }
 
   /* HEADER + BURGER */
@@ -4815,7 +4815,7 @@ body {
   .nav-burger span {
     width: 24px !important;
     height: 3px !important;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
     background: currentColor !important;
     transition: transform 0.15s steps(3, end), opacity 0.15s steps(3, end) !important;
   }
@@ -4889,7 +4889,7 @@ body {
   }
 
   .mobile-nav-close span {
-    border-radius: 0 !important;
+    border-radius: 0px !important;
     transition: var(--mobile-step) !important;
   }
 
@@ -5282,7 +5282,7 @@ body {
   }
 
   .footer-bottom {
-    border-radius: 0 !important;
+    border-radius: 0px !important;
     clip-path: polygon(1% 0, 100% 7%, 98% 100%, 0 92%) !important;
   }
 }
@@ -5296,7 +5296,7 @@ body {
   *,
   *::before,
   *::after {
-    border-radius: 0 !important;
+    border-radius: 0px !important;
   }
 
   /* HEADER: logo visible, left aligned, no clipping */
@@ -6024,5 +6024,11 @@ body {
   .artist-poster .tape-a,
   .artist-poster .tape-b {
     display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  *, *::before, *::after {
+    border-radius: 0px !important;
   }
 }

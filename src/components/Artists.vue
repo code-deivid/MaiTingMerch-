@@ -6,7 +6,7 @@ const artists = [
   { name: 'Raphael', img: 'https://commons.wikimedia.org/wiki/Special:FilePath/RAPHAEL%20%28cropped%29.JPG' },
   { name: 'Rauw Alejandro', img: 'https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2024/09/16/17264855852237.jpg' },
   { name: 'Feid', img: 'https://dynamicmedia.livenationinternational.com/h/f/x/20e705d7-06d4-41ec-9018-f80caed7296d.jpg?format=webp&width=3840&quality=75' },
-  { name: 'Chambao', img: 'https://scontent.fvlc4-1.fna.fbcdn.net/v/t39.30808-6/678185922_1521029013355469_7404121186350847284_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Vb1NCwdMwewQ7kNvwHzfXK1&_nc_oc=AdrEV5pukipsD4PcozpZZZrgjg_BKvknKysXUtHFN7AGVkT4PvjrJGwoFa324IDe_Gw&_nc_zt=23&_nc_ht=scontent.fvlc4-1.fna&_nc_gid=1y2TRGkcQQQJSm4SMQuzTA&_nc_ss=7a289&oh=00_Af5XNEpO9eoA9EAK7nkPiNRvYFb1B1BWnJCvD_HKAGbDdw&oe=6A0A1AE7' },
+  { name: 'Chambao', img: 'https://s1.abcstatics.com/lavozdigital/www/multimedia/provincia/2023/07/30/chambao(7)_xoptimizadax-U17355500832HxR-1200x840@abc.jpg' },
   { name: 'Marlena', img: 'https://los40.com/resizer/v2/GV7LFV5M6NDXVB5D67IQ2ZVN2A.jpg?auth=2d0d413d79434fc88a3a90a4d5fc85860c53df9ded8bde86164b514625287717&quality=70&width=1200&height=544&focal=1360,795' },
   { name: 'Paula Mattheus', img: 'https://image.europafm.com/clipping/cmsimages01/2023/10/17/7DDE18D6-351B-4683-BD53-FB50FDBEC045/paula-mattheus-evento-madrid-2022_104.jpg?crop=3648,3648,x766,y0&width=1200&height=1200&optimize=low&format=webply' },
 ]

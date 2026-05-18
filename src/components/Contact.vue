@@ -19,7 +19,7 @@ const submit = () => {
   <section class="contact contact-v3" id="contacto" data-screen-label="06 Contacto">
     <div class="contact-poster reveal">
       <span class="tape tape-a"></span>
-      <img src="https://instagram.fvlc4-1.fna.fbcdn.net/v/t51.82787-15/689168874_18070038434675974_5935405393194176846_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=102&ig_cache_key=Mzg5MjA2MTQ4NTQ4OTM1NzY1NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMzA3Mi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=br_T_e8a1dAQ7kNvwG_Kcpm&_nc_oc=Adq-jRydVyX_DMBHc6AzX_EKj9NUJKJLUQGRd0iCzRhduYbig28bh-g730OEHpWvqg0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fvlc4-1.fna&_nc_gid=9TLWm3AFwBM6tM-3dtmgzg&_nc_ss=7a22e&oh=00_Af74qzt9psSoKoyfek0mGwe3YTOcb4AdH3Dwr6wr87vqpg&oe=6A0A2379" alt="Concierto y público" />
+      <img src="https://i.pinimg.com/564x/ba/bc/69/babc690344890c4a102d215762edf0d1.jpg" alt="Concierto y público" />
       <!-- <strong>BRIEF / DROP</strong> -->
     </div>
 
